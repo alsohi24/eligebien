@@ -43,8 +43,8 @@ export default function App() {
           },
         })}
         tabBarOptions={{
-          activeTintColor: '#250aa1',
-          inactiveTintColor: 'gray',
+          activeTintColor: '#3610e3',//'#250aa1',
+          inactiveTintColor: '#bababa',
         }}
       >
         <Tab.Screen name="Instituciones académicas" component={HomeScreen} />
