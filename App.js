@@ -35,10 +35,7 @@ export default function App() {
             } else if (route.name === 'Comparadores') {
               iconName = focused ? 'area-chart' : 'area-chart';
             }
-            
-
-            // You can return any component that you like here!
-            //return <Ionicons name={iconName} size={size} color={color} />;
+      
             return <FontAwesome name={iconName} size={size} color={color} />
           },
         })}
