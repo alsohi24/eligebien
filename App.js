@@ -30,12 +30,12 @@ export default function App() {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
-
             if (route.name === 'Instituciones académicas') {
               iconName = focused ? 'university' : 'university';
             } else if (route.name === 'Comparadores') {
               iconName = focused ? 'area-chart' : 'area-chart';
             }
+            
 
             // You can return any component that you like here!
             //return <Ionicons name={iconName} size={size} color={color} />;
