@@ -4,11 +4,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons'; 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-
+import { Intituciones } from './components/Intituciones';
 function HomeScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Lista!</Text>
+      <Text>Listwa!</Text>
     </View>
   );
 }
@@ -30,7 +30,7 @@ export default function App() {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
-            if (route.name === 'Instituciones académicas') {
+            if (route.name === 'Instituciones académicasss') {
               iconName = focused ? 'university' : 'university';
             } else if (route.name === 'Comparadores') {
               iconName = focused ? 'area-chart' : 'area-chart';
@@ -44,7 +44,7 @@ export default function App() {
           inactiveTintColor: '#bababa',
         }}
       >
-        <Tab.Screen name="Instituciones académicas" component={HomeScreen} />
+        <Tab.Screen name="Instituciones académicas" component={Intituciones} />
         <Tab.Screen name="Comparadores" component={SettingsScreen} />
       </Tab.Navigator>
     </NavigationContainer>
